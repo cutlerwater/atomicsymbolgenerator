@@ -1,90 +1,159 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
-	box-sizing: border-box;
+
+html
+{
+    scroll-behavior: smooth;
 }
-
 body {
-	background-image: linear-gradient(to bottom, #fff 0%, #fff 50%, #ecf0f1 50%, #f1f2f6 100%);
-	font-family: 'Muli', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
+    text-align: center;
+    background-color: #202020;
+    color: white;
+  }
+
+
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #DBEDF3;
+    font-family: "Arvo", sans-serif;
+    text-shadow: 3px 0 #DA0463;
+    margin: 30px auto;
+    padding: 10px 20px;
+  
+  }
+  
+.container
+{
+    margin: 10px auto 0;
+    width: 40%;
+    min-width: 322px;
+    padding: 5% 5%;
+    /* border-radius: 20px; */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    
 }
 
-.currency {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.container.box{
+    margin: 0 auto;
+    padding: 1% 0 100px;
 }
 
-.currency select {
-	background: transparent;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat, repeat;
-    background-position: right .2em top 50%, 0 0;
-    background-size: .50em auto, 100%;
-	border: 0;
-	padding-right: 20px;
-	font-size: 22px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+form
+{
+    text-align: left;
+}
+/* label{
+    font-size: 1.3em;
+} */
+
+.form-group
+{
+    margin: 10px auto;
+    color:rgb(174, 174, 174);
+    
 }
 
-.currency input {
-	border: 0;
-	background: transparent;
-	font-size: 22px;
-	text-align: right;
+.form-control
+{
+    /* border: 1px solid black; */
+    border: none;
+    background-color: rgb(242, 242, 242);
+    /* box-shadow: 10px 10px 100px  rgb(197, 192, 192); */
+    height: 50px;
+    border-radius: 10px;
+    
+    font-size: 1.2em;
+    padding: 5% 5%;
 }
 
-.middle {
-	color: rgb(0, 117, 235);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+
+.form-control::placeholder
+{
+    color:rgb(174, 174, 174);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-.middle button {
-	background-color: #fff;
-	border: 2px solid #ecf0f1;
-	border-radius: 50%;
-	cursor: pointer;
-	color: rgb(0, 117, 235);
-	font-size: 12px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 30px;
-	width: 30px;
-	transform: rotate(90deg);
+
+.btn
+{
+    border: none;
+    width: 100%;
+    background-color: darkslategray;
+}
+.btn:hover
+{
+    background-color: #e67123;
+    border: none;
 }
 
-.middle button:active {
-	transform: rotate(90deg) scale(0.9);
+.symbolbox
+{
+    height: 300px;
+    width: 300px;
+    border: 6px solid darkslategray;
+    margin: 0 auto;
+    text-align: left;
+	text-transform: uppercase;
 }
 
-.middle .rate {
-	background-color: #fff;
-	border: 2px solid #ecf0f1;
-	border-radius: 50px;
-	font-size: 14px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 30px;
-	padding: 0 10px;
-	margin: 30px 15px 30px 25px;
+h2
+{
+    font-family: "Arvo", sans-serif;
+    margin: 0 auto 80px;
+}
+.symbolbox p
+{
+    margin: 15px 20px 0;
+    text-align: left;
+}
+.symbolbox p span.age
+{
+    font-size: 3rem;
+    
 }
 
-select:focus, input:focus, button:focus {
-	outline: 0;
+.symbolbox p span.weight
+{
+   
+    position: relative;
+    right: -120px;
+    top: -10px;
+    font-size: 1.5rem;
 }
 
+.elementname
+{
+    text-align: left;
+    font-size: 6rem;
+    font-weight: 500;
+    color: white;
+    font-family: "Arvo", sans-serif;
+    text-shadow:none;
+    margin: 0px 0;
+    padding: 0 20px;
+    display: inline;
+    text-align: left;
+
+}
+
+p.fullname
+{
+    margin: 0 20px 0;
+    padding-top: 0px;
+    font-size: 20px;
+    
+}
+
+.hidden
+{
+    display: none;
+}
+p.config
+{
+    margin: 10px 20px 5px;
+}
 
 /* SOCIAL PANEL CSS */
 .social-panel-container {
